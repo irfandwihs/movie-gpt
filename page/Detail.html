@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Supercell</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="../assets/images/logo.webp"
+      type="image/png"
+    />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body id="#top">
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <div class="overlay" data-overlay></div>
+
+        <a href="../index.html" class="logo">
+          <img src="../assets/images/logo.webp" alt="logo" />
+        </a>
+
+        <button class="menu-open-btn" data-menu-open-btn>
+          <ion-icon name="reorder-two"></ion-icon>
+        </button>
+
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="../index.html" class="logo">
+              <img src="../assets/images/logo.webp" alt="logo" />
+            </a>
+
+            <button class="menu-close-btn" data-menu-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li>
+              <a href="../index.html" class="navbar-link">Home</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #MOVIE DETAIL
+      -->
+
+        <section class="movie-detail">
+          <div class="container">
+            <!-- <div id="movie-dtls"></div> -->
+            <!-- <div id="movies-container"></div> -->
+            <!-- <div>
+              <h1 id="movie-title"></h1>
+              <div>
+                <span id="movie-year"></span> |
+                <span id="movie-rating"></span> |
+                <span id="movie-genre"></span>
+              </div>
+              <img id="movie-poster" />
+              <p id="movie-synopsis"></p>
+              <iframe id="movie-trailer"></iframe>
+              <p id="movie-duration"></p>
+            </div> -->
+            <h1>Movies</h1>
+            <table id="movie-table">
+              <thead>
+                <tr>
+                  <th>Title</th>
+                  <th>Year</th>
+                  <th>Rating</th>
+                  <th>Genre</th>
+                  <th>Duration</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- 
+        - #TV SERIES
+      --></article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <!-- 
+    - #GO TO TOP
+  -->
+
+    <!-- 
+    - custom js link
+  -->
+    <!-- <script>
+      const movies = [
+        {
+          title: "Starbuck",
+          year: 2011,
+          rating: 7.2,
+          genre: "Comedy/Drama/Romance",
+          duration: "1h 58m",
+        },
+        {
+          title: "Blue Valentine",
+          year: 2010,
+          rating: 7.3,
+          genre: "Drama/Romance",
+          duration: "1h 52m",
+        },
+      ];
+
+      const tableBody = document.querySelector("#movie-table tbody");
+
+      movies.forEach((movie) => {
+        const row = document.createElement("tr");
+
+        const titleCell = document.createElement("td");
+        titleCell.textContent = movie.title;
+        row.appendChild(titleCell);
+
+        const yearCell = document.createElement("td");
+        yearCell.textContent = movie.year;
+        row.appendChild(yearCell);
+
+        const ratingCell = document.createElement("td");
+        ratingCell.textContent = movie.rating;
+        row.appendChild(ratingCell);
+
+        const genreCell = document.createElement("td");
+        genreCell.textContent = movie.genre;
+        row.appendChild(genreCell);
+
+        const durationCell = document.createElement("td");
+        durationCell.textContent = movie.duration;
+        row.appendChild(durationCell);
+
+        tableBody.appendChild(row);
+      });
+    </script> -->
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/dtl.js"></script>
+    <script src="../assets/js/scpt.js"></script>
+    <script src="../assets/js/cari.js"></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
