@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moglog Eiga - Movie Database</title>
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./filter.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Movie GPT</div>
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search by title..." />
+        <button id="search-button">Search</button>
+      </div>
+    </header>
+
+    <div class="filter-container">
+      <label for="genre-filter"></label>
+      <select id="genre-filter">
+        <option value="all">All Genres</option>
+        <option value="action">Action</option>
+        <option value="animation">Animation</option>
+        <option value="crime">Crime</option>
+        <option value="thriller">Thriller</option>
+        <!-- Add more genres as needed -->
+      </select>
+
+      <label for="country-filter"></label>
+      <select id="country-filter">
+        <option value="all">All Countries</option>
+        <option value="usa">USA</option>
+        <option value="cina">Cina</option>
+        <option value="german">German</option>
+        <option value="inggris">Inggris</option>
+        <option value="japan">Japan</option>
+        <option value="korea">Korea</option>
+        <option value="spanyol">Spanyol</option>
+        <option value="thailand">Thailand</option>
+        <option value="ukraina">Ukraina</option>
+        <option value="vietnam">Vietnam</option>
+        <!-- Add more countries as needed -->
+      </select>
+
+      <label for="year-filter"></label>
+      <select id="year-filter">
+        <option value="all">All Years</option>
+        <option value="2023">2023</option>
+        <option value="2022">2022</option>
+        <option value="2021">2021</option>
+        <option value="2020">2020</option>
+        <option value="2019">2019</option>
+        <option value="2018">2018</option>
+        <option value="2017">2017</option>
+        <option value="2016">2016</option>
+        <option value="2015">2015</option>
+        <option value="2014">2014</option>
+        <option value="2013">2013</option>
+        <option value="2012">2012</option>
+        <option value="2011">2011</option>
+        <option value="2010">2010</option>
+        <option value="2009">2009</option>
+        <!-- Add more years as needed -->
+      </select>
+    </div>
+
+    <main>
+      <div id="movie-container" class="movie-grid">
+        <!-- Movie cards will be appended here -->
+      </div>
+    </main>
+
+    <script type="module" src="./movie.js"></script>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
